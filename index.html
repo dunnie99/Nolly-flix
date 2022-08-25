@@ -4,69 +4,223 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nolly-flix - Watch Tv series, Movies, Drama Online, Anywhere</title>
-    <style>
-        body {
-            background-color: lightblue;
-        }
-        h1 {
-            text-align: center;
-        }
-            .box-container {
-    display: flex;
-    margin: 5% 10% 3% 10%;
-    background-color: white;
-    border-radius: 20px;
-    height: 20em;
-}
-
-.box-container2 {
-    display: flex;
-    margin: 3% 10% 5% 10%;
-    background-color: white;
-    border-radius: 20px;
-    height: 20em;
-    justify-content: center;
-}
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
-    <h1>Nolly-flix - Watch Tv series, Movies, Drama Online, Anywhere</h1>
-    <section id="benefits">
-        <div class="box-container">
-            <div class="box-1">
-                <i class="fas fa-chess-rook fa-4x fa-pull-left fa-border"></i>
-                <h3>The Redemption</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>
+    <header class="header">
+        <img src="./images/Color logo - no background.svg" alt="Nolly-flix" class="headerLogo">
+        - Watch Tv series, Movies, Drama Online, Anywhere.
+    </header>
+
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <section class="benefitSection">
+        <h3 class="benefitTitle">Popular Now</h3>
+        <div class="benefitAnt swiper-container">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <a class="benefitAnt" href="#">
+                        <img class="benefitAnt__image"
+                            src="./images/movie1.jpg"
+                            alt="The Redemption" width="190" height="250">
+                    </a>
+                    <!---------<h3>The Redemption</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>--------->
+                    <button class="like__btn">
+                         <span id="icon"><i class="fa-solid fa-heart"></i></span>
+                         <span id="count">0</span>
+                    </button>
+                </div>
+    
+                <div class="swiper-slide">
+                    <a class="benefitAnt" href="#">
+                        <img class="benefitAnt__image"
+                            src="./images/movie2.jpg"
+                            alt="Africa's Tech Root" width="190" height="250">
+                    </a>
+                    <!---------<h3>Africa's Tech Root</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>---------->
+                    <button class="like__btn">
+                        <span id="icon"><i class="fa-solid fa-heart"></i></span>
+                        <span id="count">0</span>
+                   </button>
+                </div>
+    
+                <div class="swiper-slide">
+                    <a class="benefitAnt" href="#">
+                        <img class="benefitAnt__image"
+                            src="./images/movie3.jpg"
+                            alt="The Invisible Man" width="190" height="250">
+                    </a>
+                    <!-----------<h3>The Invisible Man</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>--------->
+                    <button class="like__btn">
+                        <span id="icon"><i class="fa-solid fa-heart"></i></span>
+                        <span id="count">0</span>
+                   </button>
+                </div>
+            
+                <div class="swiper-slide">
+                    <a class="benefitAnt" href="#">
+                        <img class="benefitAnt__image"
+                            src="./images/movie4.jpeg"
+                            alt="The Complicated Project" width="190" height="250">
+                    </a>
+                    <!----------<h3>The Complicated Project</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>--------->
+                    <button class="like__btn">
+                        <span id="icon"><i class="fa-solid fa-heart"></i></span>
+                        <span id="count">0</span>
+                   </button>
+                </div>
+    
+                <div class="swiper-slide">
+                    <a class="benefitAnt" href="#">
+                        <img class="benefitAnt__image"
+                            src="./images/movie5.jpg"
+                            alt="Simply Javascript" width="190" height="250">
+                    </a>
+                    <!------<h3>Simply Javascript</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>--------->
+                    <button class="like__btn">
+                        <span id="icon"><i class="fa-solid fa-heart"></i></span>
+                        <span id="count">0</span>
+                   </button>
+                </div>
+    
+                <div class="swiper-slide">
+                    <a class="benefitAnt" href="#">
+                        <img class="benefitAnt__image"
+                            src="./images/movie6.jpeg"
+                            alt="The New Web" width="190" height="250">
+                    </a>
+                    <!-----------<h3>The New Web</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>------------>
+                    <button class="like__btn">
+                        <span id="icon"><i class="fa-solid fa-heart"></i></span>
+                        <span id="count">0</span>
+                   </button>     
+                </div>
+    
             </div>
-            <div class="box-2">
-                <i class="fas fa-skating fa-4x fa-pull-left fa-border"></i>
-                <h3>Africa's Tech Root</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>
-            </div>
-            <div class="box=3">
-                <i class="fas fa-percentage fa-4x fa-pull-left fa-border"></i>
-                <h3>The Invisible Man</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>
-            </div>
-        </div>
-        
-        <div class="box-container2">
-            <div class="box-4">
-                <i class="fas fa-lira-sign fa-4x fa-pull-left fa-border"></i>
-                <h3>The Complicated Project</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>
-            </div>
-            <div class="box-5">
-                <i class="fas fa-bell fa-4x fa-pull-left fa-border"></i>
-                <h3>Simply Javascript</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>
-            </div>
-            <div class="box-6">
-                <i class="fas fa-less-than-equal fa-4x fa-pull-left fa-border"></i>
-                <h3>The New Web</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>
-            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
+
+    <section class="benefitSection">
+        <h3 class="benefitTitle">Currently Watching</h3>
+        <div class="benefitAnt swiper-container">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <a class="benefitAnt" href="#">
+                        <img class="benefitAnt__image"
+                            src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUqwomVyMFsby9zeXLLnkfv744mKCzQDWL7rUDhbwg89bpT-V7qYoW-NNfjFaG3nFcDWu-U49vpUFB_L4njc2GFl6l60Efb4oT-_0e3oi3Dh8nwyLZhG2ciBHGUnRMB_J-D2jQk2Qz_WM4n8A_8b8ZqFDpj80B6KJ9T2bXR7rYcl0M8MaDCsR68.jpg?r=93f"
+                            alt="The Queen's Gambit" width="190" height="250">
+                    </a>
+                    <!-----------<h3>The Queen's Gambit</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>------------>
+                    <button class="like__btn">
+                        <span id="icon"><i class="fa-solid fa-heart"></i></span>
+                        <span id="count">0</span>
+                   </button>     
+                </div>
+                
+                <div class="swiper-slide">
+                    <a class="benefitAnt" href="#">
+                        <img class="benefitAnt__image"
+                            src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSEl8LWx4tMJIM9Atm3F1Y49Uq6X01tnDe8gPA6d84-gQ767saz9z7Jxj9sFozuI8bcM2vlxeP9IPq3Aa7jxLlkMu8JGjizRLblNEcmD7g-Z2NeZvkvV5nWF9DmJ.jpg?r=393"
+                            alt="Dark" width="190" height="250">
+                    </a>
+                    <!-----------<h3>Dark</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>------------>
+                    <button class="like__btn">
+                        <span id="icon"><i class="fa-solid fa-heart"></i></span>
+                        <span id="count">0</span>
+                   </button>     
+                </div>
+                
+                <div class="swiper-slide">
+                    <a class="benefitAnt" href="#">
+                        <img class="benefitAnt__image"
+                            src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRItzLGWEqRojd0SS5lkLN56bRwYGctgeybCwPWq-zs_UwEXKX_4CsXsMlWupAdBB5D7KDN-8RzuCvqzTf5Bvo_HQmI.webp?r=3ad"
+                            alt="Suit" width="190" height="250">
+                    </a>
+                    <!-----------<h3>Suit</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>------------>
+                    <button class="like__btn">
+                        <span id="icon"><i class="fa-solid fa-heart"></i></span>
+                        <span id="count">0</span>
+                   </button>     
+                </div>
+                
+                <div class="swiper-slide">
+                    <a class="benefitAnt" href="#">
+                        <img class="benefitAnt__image"
+                            src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUjsKDiaKwLmrV662pwmVKEtRmbJI-s8M9ojCqr2QEdnPUJPX86RP-n9IGXxGcaHWkTf-cwz5e4kBLN3jYLM7HuBfYA.webp?r=01d"
+                            alt="Breaking Bad" width="190" height="250">
+                    </a>
+                    <!-----------<h3>Breaking Bad</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>------------>
+                    <button class="like__btn">
+                        <span id="icon"><i class="fa-solid fa-heart"></i></span>
+                        <span id="count">0</span>
+                   </button>     
+                </div>
+                
+                <div class="swiper-slide">
+                    <a class="benefitAnt__image" href="#">
+                        <img class="benefitAnt__image"
+                            src="https://occ-0-1433-1432.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdPrypf33QcVWc0DHxX7rDoTSbX7EgHSJd_VDlwIr81A40ua4l2F_esQS1u4zB9SkN5TAGO1Bw0SmoEqTICKfx9vbRu-qdKh9KGWuRLasXOrCIUpEYnMffVoebRS.jpg?r=d3b"
+                            alt="The Crown" width="190" height="250">
+                    </a>
+                    <!-----------<h3>The Crown</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>------------>
+                    <button class="like__btn">
+                        <span id="icon"><i class="fa-solid fa-heart"></i></span>
+                        <span id="count">0</span>
+                   </button>
+                </div>
+
+                <div class="swiper-slide">
+                    <a class="benefitAnt" href="#">
+                        <img class="benefitAnt__image"
+                            src="./images/movie10.png"
+                            alt="The Witcher" width="190" height="250">
+                    </a>
+                    <!-----------<h3>The Crown</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum.</p>------------>
+                    <button class="like__btn">
+                        <span id="icon"><i class="fa-solid fa-heart"></i></span>
+                        <span id="count">0</span>
+                   </button>     
+                </div>
+                
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  spaceBetw
+  loop: true,
+
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+    </script>
 </body>
