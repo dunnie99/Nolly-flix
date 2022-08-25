@@ -19,7 +19,7 @@ likeBtn.addEventListener("click", () => {
 }); 
 
 
-/*let mySwiper = new Swiper('.swiper-container', {
+let mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     spaceBetween: 5,
     slidesPerView: 2,
@@ -40,4 +40,4 @@ likeBtn.addEventListener("click", () => {
             freeMode: false
         }
     }
-});*/
+});
